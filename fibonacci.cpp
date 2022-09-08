@@ -15,7 +15,7 @@ std::vector<int> fibonacci( int len ) {
     return fib;
 }
 
-double vec_avg( std::vector<int> const &vec ) {
+double vec_avg( const std::vector<int> &vec ) {
     double sum = 0;
     for ( int elem : vec ) {
         sum += elem;
@@ -23,7 +23,7 @@ double vec_avg( std::vector<int> const &vec ) {
     return sum / vec.size();
 }
 
-void print_vec( std::vector<int> const &vec ) {
+void print_vec( const std::vector<int> &vec ) {
     for ( int elem : vec ) {
         std::cout << elem << ' ';
     }
